@@ -1,0 +1,23 @@
+2017-03-13 11:12:44 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2017-03-13 11:12:48 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2017-03-13 11:22:39 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2017-03-13 11:23:00 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2017-03-13 11:23:30 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2017-03-13 11:23:40 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2017-03-13 11:24:14 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa606@example.com
+2017-03-13 11:24:28 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa601@example.com
+2017-03-13 11:24:32 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa602@example.com
+2017-03-13 11:24:33 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa603@example.com
+2017-03-13 11:24:34 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa604@example.com
+2017-03-13 11:30:32 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2017-03-13 11:30:41 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2017-03-13 11:31:37 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa606@example.com
+2017-03-13 11:31:38 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : splashEmailBtn
+2017-03-13 11:31:51 ERROR [StartWebDriver] - [getElement]  No Such Element : errorClose
+2017-03-13 11:33:43 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2017-03-13 11:33:55 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2017-03-13 11:34:00 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : splashEmail Value : qa606@example.com
+2017-03-13 11:34:01 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : splashEmailBtn
+2017-03-13 11:34:12 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : fName Value : Sandeep
+2017-03-13 11:34:13 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : lName Value : Test
+2017-03-13 11:34:14 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : emailConfirm Value : qa606@example.com

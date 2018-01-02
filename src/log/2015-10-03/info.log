@@ -1,0 +1,9 @@
+2015-10-03 11:15:57 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-10-03 11:16:01 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-03 11:16:03 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-10-03 11:16:04 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-10-03 11:16:06 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-03 11:16:06 INFO  [WindowHelper] - [back]  back 
+2015-10-03 11:16:06 INFO  [WindowHelper] - [forward]  forward 
+2015-10-03 11:16:08 INFO  [WindowHelper] - [refresh]  refresh 
+2015-10-03 11:16:09 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://mail.google.com

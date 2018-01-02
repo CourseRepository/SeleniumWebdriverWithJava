@@ -1,0 +1,16 @@
+2015-03-15 22:03:58 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-15 22:04:01 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 22:04:03 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 22:04:06 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 22:04:06 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 22:04:07 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 22:04:10 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 22:04:18 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 22:06:18 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-15 22:06:21 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 22:06:23 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 22:06:26 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 22:06:26 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 22:06:28 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 22:06:30 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 22:06:38 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']

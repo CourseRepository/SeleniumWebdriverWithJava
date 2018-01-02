@@ -1,0 +1,598 @@
+2015-02-12 20:23:19 INFO  [ConnectionPoolListener] - [onStart] Webdriver Started 
+2015-02-12 20:23:19 FATAL [ConnectionPoolListener] - [intiDatabase]  Unable to Create the Database Pool : 
+org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at helper.ConnectionPoolListener.intiDatabase(ConnectionPoolListener.java:35)
+	at helper.ConnectionPoolListener.onStart(ConnectionPoolListener.java:65)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:197)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:238)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 13 more
+2015-02-12 20:23:19 INFO  [ConnectionPoolListener] - [onStart] Bugzila Suite Started 
+2015-02-12 20:23:24 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-02-12 20:23:33 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-02-12 20:23:33 INFO  [CustomeReportListener] - [onTestStart] OpenPage Started 
+2015-02-12 20:23:35 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:23:38 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:23:38 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.script.upload.TestMultipleUpload.OpenPage.jpg
+2015-02-12 20:23:50 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:23:50 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.script.upload.TestMultipleUpload.OpenPage(TestMultipleUpload.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:23:50 INFO  [CustomeReportListener] - [onTestStart] testCaseOne Started 
+2015-02-12 20:23:54 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.listener.TestWebDriverListener.testCaseOne.jpg
+2015-02-12 20:24:06 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:24:06 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: 26c71d691ec62e8d16bb3b46fff3cfab
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir9440_25486}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at testcase.listener.TestWebDriverListener.testCaseOne(TestWebDriverListener.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:24:06 INFO  [CustomeReportListener] - [onTestStart] testAdmin Started 
+2015-02-12 20:24:09 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:24:12 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:24:12 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestAdminConsole.testAdmin.jpg
+2015-02-12 20:24:24 FATAL [StartWebDriver] - [tearDown]  Exception : 
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.70 seconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: 26c71d691ec62e8d16bb3b46fff3cfab
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir9440_25486}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at helper.StartWebDriver.tearDown(StartWebDriver.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:24:24 INFO  [ConnectionPoolListener] - [onFinish] Bugzila Suite Finished 
+2015-02-12 20:24:25 INFO  [CustomeReportListener] - [onFinish] Webdriver Finish 
+2015-02-12 20:26:35 INFO  [ConnectionPoolListener] - [onStart] Webdriver Started 
+2015-02-12 20:26:35 FATAL [ConnectionPoolListener] - [intiDatabase]  Unable to Create the Database Pool : 
+org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at helper.ConnectionPoolListener.intiDatabase(ConnectionPoolListener.java:35)
+	at helper.ConnectionPoolListener.onStart(ConnectionPoolListener.java:65)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:197)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:238)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 13 more
+2015-02-12 20:26:35 INFO  [ConnectionPoolListener] - [onStart] Bugzila Suite Started 
+2015-02-12 20:26:39 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-02-12 20:26:47 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-02-12 20:26:47 INFO  [CustomeReportListener] - [onTestStart] OpenPage Started 
+2015-02-12 20:26:49 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:26:51 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:26:52 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.script.upload.TestMultipleUpload.OpenPage.jpg
+2015-02-12 20:27:04 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:27:04 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.script.upload.TestMultipleUpload.OpenPage(TestMultipleUpload.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:27:04 INFO  [CustomeReportListener] - [onTestStart] testCaseOne Started 
+2015-02-12 20:27:11 INFO  [CustomeReportListener] - [onTestSuccess] testCaseOne Success 
+2015-02-12 20:27:11 INFO  [CustomeReportListener] - [onTestStart] testAdmin Started 
+2015-02-12 20:27:14 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:27:17 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:27:17 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestAdminConsole.testAdmin.jpg
+2015-02-12 20:27:30 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:27:30 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestAdminConsole.testAdmin(TestAdminConsole.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:27:30 INFO  [CustomeReportListener] - [onTestStart] testCheckElement Started 
+2015-02-12 20:27:32 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:27:40 INFO  [CustomeReportListener] - [onTestSuccess] testCheckElement Success 
+2015-02-12 20:27:40 INFO  [CustomeReportListener] - [onTestStart] testConditions Started 
+2015-02-12 20:27:42 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:27:44 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:27:45 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestExpectedConditions.testConditions.jpg
+2015-02-12 20:27:57 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:27:57 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestExpectedConditions.testConditions(TestExpectedConditions.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:27:57 INFO  [CustomeReportListener] - [onTestStart] testWait Started 
+2015-02-12 20:27:58 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_suggest
+2015-02-12 20:28:00 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestFluentWait.testWait.jpg
+2015-02-12 20:28:05 FATAL [StartWebDriver] - [tearDown]  Exception : 
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.47 seconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: 7ac39a76a27e37f4cdd8ab2d882d6254
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir7656_20704}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at helper.StartWebDriver.tearDown(StartWebDriver.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:28:05 INFO  [ConnectionPoolListener] - [onFinish] Bugzila Suite Finished 
+2015-02-12 20:28:06 INFO  [CustomeReportListener] - [onFinish] Webdriver Finish 
+2015-02-12 20:43:04 INFO  [ConnectionPoolListener] - [onStart] Webdriver Started 
+2015-02-12 20:43:04 FATAL [ConnectionPoolListener] - [intiDatabase]  Unable to Create the Database Pool : 
+org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at helper.ConnectionPoolListener.intiDatabase(ConnectionPoolListener.java:35)
+	at helper.ConnectionPoolListener.onStart(ConnectionPoolListener.java:65)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:197)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:238)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 13 more
+2015-02-12 20:43:04 INFO  [ConnectionPoolListener] - [onStart] Bugzila Suite Started 
+2015-02-12 20:43:08 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-02-12 20:43:16 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-02-12 20:43:16 INFO  [CustomeReportListener] - [onTestStart] OpenPage Started 
+2015-02-12 20:43:18 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:43:20 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:43:21 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.script.upload.TestMultipleUpload.OpenPage.jpg
+2015-02-12 20:43:33 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:43:33 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.script.upload.TestMultipleUpload.OpenPage(TestMultipleUpload.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:43:33 INFO  [CustomeReportListener] - [onTestStart] testCaseOne Started 
+2015-02-12 20:43:39 INFO  [CustomeReportListener] - [onTestSuccess] testCaseOne Success 
+2015-02-12 20:43:39 INFO  [CustomeReportListener] - [onTestStart] testAdmin Started 
+2015-02-12 20:43:41 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:43:43 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:43:44 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestAdminConsole.testAdmin.jpg
+2015-02-12 20:43:56 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:43:56 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.WebDriverException: unknown error: cannot take screenshot
+from unknown error: Failed to capture tab: unknown error
+JavaScript stack:
+Error: Failed to capture tab: unknown error
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:37:5)
+    at safeCallbackApply (extensions::sendRequest:21:15)
+    at handleResponse (extensions::sendRequest:73:7)
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: def3edc405be0874dcb5c2e22a301993
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir8196_4623}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:324)
+	at helper.GenericHelper.takeScreenShot(GenericHelper.java:51)
+	at helper.GenericHelper.takeMultipleScreeShot(GenericHelper.java:77)
+	at helper.CustomeReportListener.onTestFailure(CustomeReportListener.java:182)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:43:56 INFO  [CustomeReportListener] - [onTestStart] testCheckElement Started 
+2015-02-12 20:43:58 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:44:06 INFO  [CustomeReportListener] - [onTestSuccess] testCheckElement Success 
+2015-02-12 20:44:06 INFO  [CustomeReportListener] - [onTestStart] testConditions Started 
+2015-02-12 20:44:08 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:44:11 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-12 20:44:11 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestExpectedConditions.testConditions.jpg
+2015-02-12 20:44:23 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:44:23 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestExpectedConditions.testConditions(TestExpectedConditions.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:44:23 INFO  [CustomeReportListener] - [onTestStart] testWait Started 
+2015-02-12 20:44:24 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_suggest
+2015-02-12 20:44:27 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestFluentWait.testWait.jpg
+2015-02-12 20:44:39 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:44:39 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: def3edc405be0874dcb5c2e22a301993
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir8196_4623}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testcase.TestFluentWait.testWait(TestFluentWait.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:44:39 INFO  [CustomeReportListener] - [onTestStart] testKey Started 
+2015-02-12 20:44:42 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-12 20:44:43 INFO  [CustomeReportListener] - [onTestSuccess] testKey Success 
+2015-02-12 20:44:43 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-12 20:44:43 INFO  [CustomeReportListener] - [onTestSuccess] testCase Success 
+2015-02-12 20:44:43 INFO  [CustomeReportListener] - [onTestStart] testTime Started 
+2015-02-12 20:44:44 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestTimeUnit.testTime.jpg
+2015-02-12 20:44:56 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-12 20:44:56 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.001
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 729 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: def3edc405be0874dcb5c2e22a301993
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\RAHUL~1.RAT\AppData\Local\Temp\scoped_dir8196_4623}, rotatable=false, locationContextEnabled=true, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at testcase.TestTimeUnit.testTime(TestTimeUnit.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-12 20:44:56 INFO  [CustomeReportListener] - [onTestStart] testWait Started 
+2015-02-12 20:44:59 INFO  [ConnectionPoolListener] - [onFinish] Bugzila Suite Finished 
+2015-02-12 20:45:00 INFO  [CustomeReportListener] - [onFinish] Webdriver Finish 

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="TestNG" default="Generate-Report" basedir=".">
+
+	<!-- <target name="Clean">
+		<delete failonerror="false" dir="test-output" />
+	</target>
+
+
+	<target name="Create" depends="Clean">
+		<mkdir dir="test-output" />
+	</target> -->
+
+	<path id="classpath" description="Set the class path for the required jar">
+		<fileset dir="lib" includes="**/*.jar"></fileset>
+		<pathelement location="bin" />
+	</path>
+	
+	<taskdef name="TestNG-Ant" classpathref="classpath" classname="org.testng.TestNGAntTask"></taskdef>
+
+
+
+	<target name="Compile">
+		<javac classpathref="classpath" includeantruntime="true" srcdir="src" destdir="bin" includes="**/*.java" >
+		</javac>
+	</target>
+
+	<target name="Run-Test" depends="Compile">
+		<TestNG-Ant outputdir="test-output" haltonfailure="false" verbose="2" classpathref="classpath">
+			<xmlfileset dir="." includes="testng.xml"/>
+		</TestNG-Ant>
+	</target>
+	
+    <target name="Generate-Report" depends="Run-Test" description="Generate the Xlsx report using the testng-result.xml">
+        <java classpathref="classpath" classname="reports.ExcelReportGenerator" >
+        	<arg value="test-output"/>
+        </java>
+    </target>
+
+
+</project>

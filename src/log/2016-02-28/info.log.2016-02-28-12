@@ -1,0 +1,34 @@
+2016-02-28 12:00:01 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:04:29 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:04:34 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:04:42 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:08:33 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:08:38 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:08:46 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:19:29 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:19:34 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:19:52 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:22:15 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:22:19 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:22:25 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:29:18 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:29:23 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:29:43 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:38:05 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:38:10 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:38:18 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:40:15 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:40:19 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:40:26 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:42:37 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:42:42 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:43:01 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:44:19 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:44:24 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:44:32 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:46:24 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:46:29 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:46:36 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/
+2016-02-28 12:48:34 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-02-28 12:48:38 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-02-28 12:48:46 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/bdd-with-selenium-webdriver-and-speckflow-using-c/

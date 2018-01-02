@@ -1,0 +1,4 @@
+2016-12-15 22:07:53 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-12-15 22:08:14 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-12-15 22:08:42 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://jhu.test.technolutions.net/account/login
+2016-12-15 22:08:48 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : .//button[text()='Login']

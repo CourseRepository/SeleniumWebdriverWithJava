@@ -1,0 +1,158 @@
+2015-03-14 15:01:08 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:01:11 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:01:18 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:01:21 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:01:22 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:01:25 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:01:28 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:01:36 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:02:17 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : data
+2015-03-14 15:03:04 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:03:07 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:03:16 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:03:18 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:03:19 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:03:21 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:03:23 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:03:31 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:10:06 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:10:09 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:10:11 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:10:15 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:10:15 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:10:16 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:10:19 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:10:27 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:11:08 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:11:11 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:11:13 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:11:16 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:11:17 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:11:18 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:11:20 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:11:28 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:12:41 FATAL [StartWebDriver] - [tearDown]  Exception : 
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at helper.StartWebDriver.tearDown(StartWebDriver.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 39 more
+2015-03-14 15:13:45 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:13:48 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:13:49 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:13:53 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:13:53 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:13:54 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:13:57 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:14:04 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:37:39 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:37:42 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:37:44 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:37:47 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:37:47 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:37:48 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:37:51 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:37:59 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:38:29 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:38:33 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:38:34 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:38:38 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:38:38 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:38:39 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:38:41 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:38:49 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:39:17 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : data
+2015-03-14 15:40:46 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:40:49 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:40:51 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:40:55 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:40:55 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:40:56 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:40:59 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:41:07 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:42:07 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:42:10 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:42:12 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:42:15 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:42:15 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:42:16 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:42:19 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:42:27 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:44:33 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:44:37 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:44:38 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:44:42 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:44:42 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:44:43 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:44:45 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:44:53 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:51:53 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:51:56 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:51:58 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:52:01 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:52:01 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:52:02 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:52:04 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:52:13 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-14 15:52:53 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-14 15:52:57 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-14 15:52:59 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-14 15:53:01 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-14 15:53:01 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-14 15:53:03 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-14 15:53:06 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-14 15:53:14 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']

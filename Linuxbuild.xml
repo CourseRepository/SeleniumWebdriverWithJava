@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="TestNG" default="Run-Test" basedir=".">
+	
+	<path id="classpath" description="Set the class path for the required jar">
+			<fileset dir="lib" includes="**/*.jar"></fileset>
+			<pathelement location="bin" />
+	</path>
+	
+	<target name="Compile" >
+		<javac classpathref="classpath" includeantruntime="true" srcdir="src" destdir="bin" includes="**/*.java">
+		</javac>
+	</target>
+	
+	<target name="Run-Test" depends="Compile">
+		<java classpathref="classpath" classname="testcase.TestYoutubeLinux"> </java>
+	</target>
+</project>

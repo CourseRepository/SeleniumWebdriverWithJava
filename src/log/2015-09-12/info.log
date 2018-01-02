@@ -1,0 +1,8 @@
+2015-09-12 00:07:32 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-09-12 00:07:35 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-09-12 00:07:48 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/test-automation-with-selenium-webdriver/
+2015-09-12 00:07:59 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //a[contains(text(),'Login')]
+2015-09-12 00:08:38 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-09-12 00:08:42 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-09-12 00:08:52 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.udemy.com/test-automation-with-selenium-webdriver/
+2015-09-12 00:09:03 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //a[contains(text(),'Login')]

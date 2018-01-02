@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Webdriver]">
+  <listeners>
+    <listener class-name="helper.ConnectionPoolListener"/>
+    <listener class-name="helper.CustomeReportListener"/>
+  </listeners>
+  <test name="Bugzila Suite(failed)">
+    <classes>
+      <class name="testcase.TestSeleniumLogger">
+        <methods>
+          <include name="openWebpage"/>
+        </methods>
+      </class> <!-- testcase.TestSeleniumLogger -->
+      <class name="testcase.TestWebElement">
+        <methods>
+          <include name="testFindElemet"/>
+        </methods>
+      </class> <!-- testcase.TestWebElement -->
+      <class name="testcase.TestTimeUnit">
+        <methods>
+          <include name="testTime"/>
+        </methods>
+      </class> <!-- testcase.TestTimeUnit -->
+      <class name="testcase.TestPrompt">
+        <methods>
+          <include name="testCasePrompt"/>
+        </methods>
+      </class> <!-- testcase.TestPrompt -->
+      <class name="testcase.TestNg">
+        <methods>
+          <include name="stopWebdriver"/>
+          <include name="startWebdriver"/>
+          <include name="testCase"/>
+        </methods>
+      </class> <!-- testcase.TestNg -->
+      <class name="testcase.TestNavigation">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testNavigate"/>
+        </methods>
+      </class> <!-- testcase.TestNavigation -->
+      <class name="testcase.TestScript">
+        <methods>
+          <include name="testCaseScript"/>
+        </methods>
+      </class> <!-- testcase.TestScript -->
+      <class name="testcase.script.upload.TestMultipleUpload">
+        <methods>
+          <include name="OpenPage"/>
+          <include name="logOut"/>
+          <include name="uploadFile" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- testcase.script.upload.TestMultipleUpload -->
+      <class name="testcase.TestSelect">
+        <methods>
+          <include name="testDropDown"/>
+        </methods>
+      </class> <!-- testcase.TestSelect -->
+      <class name="testcase.TestFrameWork">
+        <methods>
+          <include name="testCaseFrame"/>
+        </methods>
+      </class> <!-- testcase.TestFrameWork -->
+      <class name="testcase.TestAlert">
+        <methods>
+          <include name="testCasealert"/>
+        </methods>
+      </class> <!-- testcase.TestAlert -->
+      <class name="testcase.TestFluentWait">
+        <methods>
+          <include name="testWait"/>
+        </methods>
+      </class> <!-- testcase.TestFluentWait -->
+      <class name="testcase.TestMouseAction">
+        <methods>
+          <include name="testAction"/>
+        </methods>
+      </class> <!-- testcase.TestMouseAction -->
+      <class name="testcase.sikuli.TestFileUpload">
+        <methods>
+          <include name="testUpload"/>
+        </methods>
+      </class> <!-- testcase.sikuli.TestFileUpload -->
+      <class name="testcase.TestClass">
+        <methods>
+          <include name="testCase" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- testcase.TestClass -->
+      <class name="testcase.TestPageFactory">
+        <methods>
+          <include name="testLogin"/>
+          <include name="testAdministration"/>
+          <include name="testPreferences"/>
+        </methods>
+      </class> <!-- testcase.TestPageFactory -->
+      <class name="testcase.TestMultiWindow">
+        <methods>
+          <include name="testWin"/>
+        </methods>
+      </class> <!-- testcase.TestMultiWindow -->
+      <class name="testcase.TestWebdriverWait">
+        <methods>
+          <include name="testWait"/>
+        </methods>
+      </class> <!-- testcase.TestWebdriverWait -->
+      <class name="testcase.TestRadioButton">
+        <methods>
+          <include name="testRadioButton"/>
+        </methods>
+      </class> <!-- testcase.TestRadioButton -->
+      <class name="testcase.LoginTest">
+        <methods>
+          <include name="testReport"/>
+          <include name="testLogin"/>
+          <include name="testPreferences"/>
+          <include name="testAdministration"/>
+        </methods>
+      </class> <!-- testcase.LoginTest -->
+      <class name="testcase.TestWebDriverBacked">
+        <methods>
+          <include name="testBackedSelenium"/>
+        </methods>
+      </class> <!-- testcase.TestWebDriverBacked -->
+    </classes>
+  </test> <!-- Bugzila Suite(failed) -->
+</suite> <!-- Failed suite [Webdriver] -->

@@ -1,0 +1,9 @@
+2015-06-25 19:50:14 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-25 19:50:18 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-25 19:50:24 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.echoecho.com/htmlforms11.htm
+2015-06-25 19:51:54 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-25 19:51:57 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-25 19:52:03 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.echoecho.com/htmlforms11.htm
+2015-06-25 19:53:53 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-25 19:53:57 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-25 19:54:04 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.echoecho.com/htmlforms11.htm

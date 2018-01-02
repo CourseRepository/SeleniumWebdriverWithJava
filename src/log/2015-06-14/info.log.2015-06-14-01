@@ -1,0 +1,20 @@
+2015-06-14 01:02:08 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-14 01:02:12 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-14 01:02:25 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-14 01:02:29 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rahul@bugzila.com
+2015-06-14 01:02:31 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rathore
+2015-06-14 01:02:34 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-14 01:02:39 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : log_in
+2015-06-14 01:02:47 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-06-14 01:02:52 INFO  [ComboBoxHelper] - [selectByKeyWord]  Select By Text : rep_platform : Text : Other
+2015-06-14 01:03:04 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : //div[@id='header']/ul[1]/li[11]/a
+2015-06-14 01:05:25 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-14 01:05:29 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-14 01:05:30 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-14 01:05:33 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rahul@bugzila.com
+2015-06-14 01:05:34 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rathore
+2015-06-14 01:05:34 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-14 01:05:37 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : log_in
+2015-06-14 01:05:41 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-06-14 01:05:42 INFO  [ComboBoxHelper] - [selectByKeyWord]  Select By Text : rep_platform : Text : Other
+2015-06-14 01:05:49 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : //div[@id='header']/ul[1]/li[11]/a

@@ -1,0 +1,3 @@
+2015-10-15 21:15:13 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-10-15 21:15:17 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-15 21:15:20 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/

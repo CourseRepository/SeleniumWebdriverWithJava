@@ -1,0 +1,9 @@
+2015-10-16 19:34:22 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-10-16 19:34:27 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-16 19:34:29 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-10-16 19:35:48 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-10-16 19:35:51 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-16 19:35:53 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-10-16 19:36:40 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-10-16 19:36:43 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-10-16 19:36:45 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/

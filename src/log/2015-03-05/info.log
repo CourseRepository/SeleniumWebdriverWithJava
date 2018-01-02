@@ -1,0 +1,6 @@
+2015-03-05 20:47:33 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-05 20:47:37 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-05 20:48:02 WARN  [WindowHelper] - [isBrowserPopupPresent]  No Browser Popup Present 
+2015-03-05 20:51:30 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-05 20:51:32 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-05 20:51:32 WARN  [WindowHelper] - [isBrowserPopupPresent]  No Browser Popup Present 

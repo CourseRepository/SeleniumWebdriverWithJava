@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="Selenium" default="createjar" basedir=".">
+	<property file="build.properties" />
+	
+	<path id="classpath" >
+		<fileset dir="${lib.dir}" includes="**/*.jar" />
+		<pathelement location="${bin.dir}" />
+	</path>
+	
+	<target name="compile">
+		<javac srcdir="${src.dir}" classpathref="classpath" 
+			destdir="${bin.dir}" includeantruntime="false"
+			includes="**/*.java" />
+	</target>
+	
+	<target name="createjar">
+		<jar destfile="${jar.dir}/WebdriverFramework.jar" update="true" >
+			<fileset dir="${bin.dir}">
+				<include name="helper/" />
+				<include name="resource/" />
+			</fileset>
+		</jar>
+	</target>
+</project>

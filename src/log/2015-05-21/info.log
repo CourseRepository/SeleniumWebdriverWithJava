@@ -1,0 +1,38 @@
+2015-05-21 21:06:46 INFO  [ConnectionPoolListener] - [onStart] Webdriver Started 
+2015-05-21 21:07:01 FATAL [ConnectionPoolListener] - [intiDatabase]  Unable to Create the Database Pool : 
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host 10.150.113.50, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at helper.ConnectionPoolListener.intiDatabase(ConnectionPoolListener.java:35)
+	at helper.ConnectionPoolListener.onStart(ConnectionPoolListener.java:65)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:197)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:238)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.150.113.50, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 14 more
+2015-05-21 21:07:01 INFO  [ConnectionPoolListener] - [onStart] Bugzila Suite Started 
+2015-05-21 21:07:13 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-05-21 21:07:19 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-05-21 21:07:19 INFO  [CustomeReportListener] - [onTestStart] testLogin Started 
+2015-05-21 21:07:34 INFO  [CustomeReportListener] - [onTestSuccess] testLogin Success 
+2015-05-21 21:07:34 INFO  [CustomeReportListener] - [onTestStart] testPreferences Started 

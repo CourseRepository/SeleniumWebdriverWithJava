@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Webdriver" parallel="false">
+	<listeners>
+		<listener class-name="helper.ConnectionPoolListener"></listener>
+		<listener class-name="helper.CustomeReportListener"></listener>
+	</listeners>
+	<test name="Bugzila Suite" preserve-order="true">
+		<classes>
+			<class name="testcase.LoginTest" />
+			<class name="testcase.TestAdminConsole" />
+			<class name="testcase.TestAllObject" />
+			<class name="testcase.TestClass" />
+			<class name="testcase.TestDisplayed" />
+			<class name="testcase.TestExpectedConditions" />
+			<class name="testcase.TestFrameWork" />
+			<class name="testcase.TestKeyBoard" />
+			<class name="testcase.TestMouseAction" />
+			<class name="testcase.TestNavigation" />
+			<class name="testcase.TestPageFactory" />
+			<class name="testcase.TestRadioButton" />
+			<class name="testcase.TestSelect" />
+			<class name="testcase.TestScript" />
+			<class name="testcase.TestWebElement" />
+			<class name="testcase.TestNg" />
+			<class name="testcase.listener.TestWebDriverListener" />
+		</classes>
+	</test>
+	
+	<test name="Java Script Suite" preserve-order="true">
+		<classes>
+			<class name="testcase.TestAlert" />
+			<class name="testcase.TestPrompt" />
+			<class name="testcase.TestFluentWait" />
+			<class name="testcase.TestMultiWindow" />
+			<class name="testcase.TestWebdriverWait" />
+		</classes>
+	</test>
+	
+	<test name="Webdriver Suite" preserve-order="true">
+		<classes>
+			<class name="testcase.TestTimeUnit" />
+		</classes>
+	</test>
+	
+	<test name="Webdriver Backed Selenium Suite" preserve-order="true">
+		<classes>
+			<class name="testcase.TestWebDriverBacked" />
+			<class name="testcase.TestSeleniumLogger" />
+		</classes>
+	</test>
+</suite> 

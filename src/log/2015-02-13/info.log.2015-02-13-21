@@ -1,0 +1,1351 @@
+2015-02-13 21:51:26 INFO  [ConnectionPoolListener] - [onStart] Webdriver Started 
+2015-02-13 21:51:26 FATAL [ConnectionPoolListener] - [intiDatabase]  Unable to Create the Database Pool : 
+org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at helper.ConnectionPoolListener.intiDatabase(ConnectionPoolListener.java:35)
+	at helper.ConnectionPoolListener.onStart(ConnectionPoolListener.java:65)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:197)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:238)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 13 more
+2015-02-13 21:51:26 INFO  [ConnectionPoolListener] - [onStart] Bugzila Suite Started 
+2015-02-13 21:51:37 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-02-13 21:51:40 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-02-13 21:51:40 INFO  [CustomeReportListener] - [onTestStart] OpenPage Started 
+2015-02-13 21:51:42 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-13 21:51:44 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-13 21:51:46 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.script.upload.TestMultipleUpload.OpenPage.jpg
+2015-02-13 21:51:58 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:51:58 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.script.upload.TestMultipleUpload.OpenPage(TestMultipleUpload.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:51:58 INFO  [CustomeReportListener] - [onTestStart] testCaseOne Started 
+2015-02-13 21:52:01 INFO  [CustomeReportListener] - [onTestSuccess] testCaseOne Success 
+2015-02-13 21:52:01 INFO  [CustomeReportListener] - [onTestStart] testAdmin Started 
+2015-02-13 21:52:03 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-13 21:52:04 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-13 21:52:06 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestAdminConsole.testAdmin.jpg
+2015-02-13 21:52:18 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:52:18 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestAdminConsole.testAdmin(TestAdminConsole.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:52:18 INFO  [CustomeReportListener] - [onTestStart] testCheckElement Started 
+2015-02-13 21:52:20 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-13 21:52:28 INFO  [CustomeReportListener] - [onTestSuccess] testCheckElement Success 
+2015-02-13 21:52:28 INFO  [CustomeReportListener] - [onTestStart] testConditions Started 
+2015-02-13 21:52:30 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-13 21:52:30 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-13 21:52:32 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestExpectedConditions.testConditions.jpg
+2015-02-13 21:52:45 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:52:45 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestExpectedConditions.testConditions(TestExpectedConditions.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:52:45 INFO  [CustomeReportListener] - [onTestStart] testWait Started 
+2015-02-13 21:52:45 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_suggest
+2015-02-13 21:52:47 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestFluentWait.testWait.jpg
+2015-02-13 21:52:59 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:52:59 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
+Command duration or timeout: 2.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testcase.TestFluentWait.testWait(TestFluentWait.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:52:59 INFO  [CustomeReportListener] - [onTestStart] testKey Started 
+2015-02-13 21:53:01 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2015-02-13 21:53:03 INFO  [CustomeReportListener] - [onTestSuccess] testKey Success 
+2015-02-13 21:53:03 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:53:03 INFO  [CustomeReportListener] - [onTestSuccess] testCase Success 
+2015-02-13 21:53:03 INFO  [CustomeReportListener] - [onTestStart] testTime Started 
+2015-02-13 21:53:03 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestTimeUnit.testTime.jpg
+2015-02-13 21:53:16 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:53:16 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 78 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at testcase.TestTimeUnit.testTime(TestTimeUnit.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:53:16 INFO  [CustomeReportListener] - [onTestStart] testWait Started 
+2015-02-13 21:53:16 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestWebdriverWait.testWait.jpg
+2015-02-13 21:53:28 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:53:28 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 94 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestWebdriverWait.testWait(TestWebdriverWait.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:53:28 WARN  [CustomeReportListener] - [onTestSkipped] uploadFile Skipped 
+2015-02-13 21:53:41 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:53:41 INFO  [CustomeReportListener] - [onTestStart] testCasealert Started 
+2015-02-13 21:53:41 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestAlert.testCasealert.jpg
+2015-02-13 21:53:53 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:53:53 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 110 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestAlert.testCasealert(TestAlert.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:53:53 INFO  [CustomeReportListener] - [onTestStart] testCaseFrame Started 
+2015-02-13 21:53:54 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestFrameWork.testCaseFrame.jpg
+2015-02-13 21:54:04 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:54:04 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 47 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestFrameWork.testCaseFrame(TestFrameWork.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:54:04 INFO  [CustomeReportListener] - [onTestStart] testAction Started 
+2015-02-13 21:54:04 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestMouseAction.testAction.jpg
+2015-02-13 21:54:15 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:54:15 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestMouseAction.testAction(TestMouseAction.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:54:15 INFO  [CustomeReportListener] - [onTestStart] testBackedSelenium Started 
+2015-02-13 21:54:55 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestWebDriverBacked.testBackedSelenium.jpg
+2015-02-13 21:55:05 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:55:05 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+com.thoughtworks.selenium.Wait$WaitTimedOutException: Failed to load page within 30000 ms
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:98)
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:75)
+	at com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad.handleSeleneseCommand(WaitForPageToLoad.java:79)
+	at com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad.handleSeleneseCommand(WaitForPageToLoad.java:1)
+	at com.thoughtworks.selenium.webdriven.SeleneseCommand.apply(SeleneseCommand.java:35)
+	at com.thoughtworks.selenium.webdriven.Timer.run(Timer.java:40)
+	at com.thoughtworks.selenium.webdriven.WebDriverCommandProcessor.execute(WebDriverCommandProcessor.java:148)
+	at com.thoughtworks.selenium.webdriven.WebDriverCommandProcessor.doCommand(WebDriverCommandProcessor.java:73)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:678)
+	at testcase.TestWebDriverBacked.testBackedSelenium(TestWebDriverBacked.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:55:05 INFO  [CustomeReportListener] - [onTestStart] testFindElemet Started 
+2015-02-13 21:55:06 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestWebElement.testFindElemet.jpg
+2015-02-13 21:55:16 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:55:16 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestWebElement.testFindElemet(TestWebElement.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:55:16 INFO  [CustomeReportListener] - [onTestStart] testLogin Started 
+2015-02-13 21:55:22 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.LoginTest.testLogin.jpg
+2015-02-13 21:55:31 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:55:31 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at testcase.LoginTest.testLogin(LoginTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:55:31 INFO  [CustomeReportListener] - [onTestStart] testPreferences Started 
+2015-02-13 21:55:37 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.LoginTest.testPreferences.jpg
+2015-02-13 21:55:45 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:55:45 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at testcase.LoginTest.testPreferences(LoginTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:55:45 INFO  [CustomeReportListener] - [onTestStart] testAdministration Started 
+2015-02-13 21:55:51 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.LoginTest.testAdministration.jpg
+2015-02-13 21:55:59 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:55:59 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at testcase.LoginTest.testAdministration(LoginTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:55:59 INFO  [CustomeReportListener] - [onTestStart] testReport Started 
+2015-02-13 21:56:04 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.LoginTest.testReport.jpg
+2015-02-13 21:56:13 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:56:13 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at testcase.LoginTest.testReport(LoginTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:56:13 INFO  [CustomeReportListener] - [onTestStart] testAll Started 
+2015-02-13 21:56:14 INFO  [CustomeReportListener] - [onTestSuccess] testAll Success 
+2015-02-13 21:56:14 INFO  [CustomeReportListener] - [onTestStart] testWin Started 
+2015-02-13 21:56:14 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestMultiWindow.testWin.jpg
+2015-02-13 21:56:27 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:56:27 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 79 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestMultiWindow.testWin(TestMultiWindow.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:56:27 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:56:32 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2015-02-13 21:56:32 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestClass.testCase.jpg
+2015-02-13 21:56:44 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:56:44 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestClass.testCase(TestClass.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:56:44 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:56:48 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2015-02-13 21:56:48 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestClass.testCase.jpg
+2015-02-13 21:57:01 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:57:01 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestClass.testCase(TestClass.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:57:01 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:57:05 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2015-02-13 21:57:05 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestClass.testCase.jpg
+2015-02-13 21:57:17 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:57:17 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestClass.testCase(TestClass.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:57:17 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:57:21 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2015-02-13 21:57:22 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestClass.testCase.jpg
+2015-02-13 21:57:34 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:57:34 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestClass.testCase(TestClass.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:57:34 INFO  [CustomeReportListener] - [onTestStart] testNavigate Started 
+2015-02-13 21:57:34 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestNavigation.testNavigate.jpg
+2015-02-13 21:57:44 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:57:44 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestNavigation.testNavigate(TestNavigation.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:57:47 INFO  [CustomeReportListener] - [onTestStart] testCase Started 
+2015-02-13 21:57:47 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestNg.testCase.jpg
+2015-02-13 21:57:57 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:57:57 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.lang.AssertionError: expected [Google1] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at testcase.TestNg.testCase(TestNg.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:57:57 INFO  [CustomeReportListener] - [onTestStart] testLogin Started 
+2015-02-13 21:57:58 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestPageFactory.testLogin.jpg
+2015-02-13 21:58:08 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:58:08 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestPageFactory.testLogin(TestPageFactory.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:58:08 INFO  [CustomeReportListener] - [onTestStart] testPreferences Started 
+2015-02-13 21:58:08 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestPageFactory.testPreferences.jpg
+2015-02-13 21:58:19 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:58:19 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestPageFactory.testPreferences(TestPageFactory.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:58:19 INFO  [CustomeReportListener] - [onTestStart] testAdministration Started 
+2015-02-13 21:58:19 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestPageFactory.testAdministration.jpg
+2015-02-13 21:58:29 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:58:29 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestPageFactory.testAdministration(TestPageFactory.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:58:29 INFO  [CustomeReportListener] - [onTestStart] testCasePrompt Started 
+2015-02-13 21:58:30 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestPrompt.testCasePrompt.jpg
+2015-02-13 21:58:42 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:58:42 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 94 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestPrompt.testCasePrompt(TestPrompt.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:58:42 INFO  [CustomeReportListener] - [onTestStart] testRadioButton Started 
+2015-02-13 21:58:42 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestRadioButton.testRadioButton.jpg
+2015-02-13 21:58:53 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:58:53 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 63 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestRadioButton.testRadioButton(TestRadioButton.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:58:53 INFO  [CustomeReportListener] - [onTestStart] testCaseOne Started 
+2015-02-13 21:58:53 INFO  [CustomeReportListener] - [onTestSuccess] testCaseOne Success 
+2015-02-13 21:58:53 INFO  [CustomeReportListener] - [onTestStart] testCaseScript Started 
+2015-02-13 21:58:53 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestScript.testCaseScript.jpg
+2015-02-13 21:59:03 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:59:03 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestScript.testCaseScript(TestScript.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:59:03 INFO  [CustomeReportListener] - [onTestStart] testDropDown Started 
+2015-02-13 21:59:04 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestSelect.testDropDown.jpg
+2015-02-13 21:59:14 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:59:14 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: fc35dc45-c887-433b-b2a1-5988faf49b4a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:846)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestSelect.testDropDown(TestSelect.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3604416170220902573webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+2015-02-13 21:59:14 INFO  [CustomeReportListener] - [onTestStart] openWebpage Started 
+2015-02-13 21:59:16 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-02-13 21:59:16 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestSeleniumLogger.openWebpage.jpg
+2015-02-13 21:59:28 INFO  [ButtonHelper] - [clickLogout]  Clicked on Logout Button 
+2015-02-13 21:59:28 ERROR [CustomeReportListener] - [onTestFailure]  Test Failed : 
+java.util.NoSuchElementException: Link Text Not Found : File a Bug
+	at helper.LinkHelper.clickLink(LinkHelper.java:24)
+	at testcase.TestSeleniumLogger.openWebpage(TestSeleniumLogger.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+2015-02-13 21:59:29 INFO  [ConnectionPoolListener] - [onFinish] Bugzila Suite Finished 
+2015-02-13 21:59:29 INFO  [CustomeReportListener] - [onFinish] Webdriver Finish 

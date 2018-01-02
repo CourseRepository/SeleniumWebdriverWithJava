@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project name="TestNG" default="Run-Test" basedir=".">
+
+	<target name="Clean">
+		<delete failonerror="false" dir="test-output" />
+	</target>
+
+
+	<target name="Create" depends="Clean">
+		<mkdir dir="test-output" />
+	</target>
+
+	<path id="classpath" description="Set the class path for the required jar">
+		<fileset dir="G:/Selenium Jars/poi-3.10-FINAL" includes="**/*.jar"></fileset>
+		<pathelement location="C:/Junit/testng-6.8.jar" />
+		<pathelement location="C:/Junit/selenium-server-standalone-2.44.0.jar" />
+		<pathelement location="C:/Junit/log4j-1.2.15.jar" />
+		<pathelement location="C:/Junit/commons-dbcp-1.4.jar" />
+		<pathelement location="C:/Junit/commons-pool-1.4.jar" />
+		<pathelement location="bin" />
+	</path>
+	
+	<taskdef name="TestNG-Ant" classpathref="classpath" classname="org.testng.TestNGAntTask"></taskdef>
+
+	<target name="Compile" depends="Create" >
+		<javac classpathref="classpath" includeantruntime="true" srcdir="src" destdir="bin" includes="**/*.java" verbose="true">
+		</javac>
+	</target>
+
+	<target name="Run-Test" depends="Compile">
+		<TestNG-Ant outputdir="test-output" haltonfailure="false" verbose="2" classpathref="classpath">
+			<xmlfileset dir="." includes="packtestng.xml"/>
+		</TestNG-Ant>
+	</target>
+</project>

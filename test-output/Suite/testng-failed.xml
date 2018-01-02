@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Annotations(failed)" parallel="none">
+    <classes>
+      <class name="testcase.testOne.MainClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AfterTest"/>
+          <include name="AfterSuite"/>
+          <include name="AfterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="testCaseTwo"/>
+          <include name="beforeTest"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testcase.testOne.MainClass -->
+    </classes>
+  </test> <!-- Annotations(failed) -->
+</suite> <!-- Failed suite [Suite] -->

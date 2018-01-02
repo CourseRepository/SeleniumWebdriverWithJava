@@ -1,0 +1,28 @@
+2015-06-20 19:10:26 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-20 19:10:29 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-20 19:10:30 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-20 19:10:32 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-06-20 19:10:34 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-06-20 19:10:34 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-20 19:10:37 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-06-20 19:10:41 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-06-20 19:10:41 INFO  [ComboBoxHelper] - [selectByVisibleText]  Select By Text : rep_platform : Text : Other
+2015-06-20 19:10:48 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[11]/a
+2015-06-20 19:10:55 ERROR [StartWebDriver] - [getElement]  No Such Element : //input[@name='uname']
+2015-06-20 19:11:51 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-20 19:11:54 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-20 19:11:55 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-20 19:11:57 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-06-20 19:11:58 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-06-20 19:11:59 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-20 19:12:01 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-06-20 19:12:05 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-06-20 19:12:05 INFO  [ComboBoxHelper] - [selectByVisibleText]  Select By Text : rep_platform : Text : Other
+2015-06-20 19:12:12 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[11]/a
+2015-06-20 19:12:14 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://codingbat.com/
+2015-06-20 19:12:19 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : //input[@name='uname'] Value : rahulrathore_2007@yahoo.co.in
+2015-06-20 19:12:23 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : //input[@name='pw'] Value : bomber
+2015-06-20 19:12:29 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@name='dologin']
+2015-06-20 19:12:30 INFO  [LinkHelper] - [clickLink]  clickLink : about
+2015-06-20 19:12:31 INFO  [LinkHelper] - [clickLink]  clickLink : home
+2015-06-20 19:12:37 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //a[text()='(log out)']

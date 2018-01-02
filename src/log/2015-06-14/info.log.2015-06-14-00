@@ -1,0 +1,22 @@
+2015-06-14 00:38:59 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-14 00:39:03 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-14 00:39:17 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-14 00:39:53 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rahul@bugzila.com
+2015-06-14 00:40:08 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rathore
+2015-06-14 00:40:24 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-14 00:42:11 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-14 00:42:15 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-14 00:42:39 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-14 00:42:46 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rahul@bugzila.com
+2015-06-14 00:42:50 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rathore
+2015-06-14 00:43:11 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-14 00:48:41 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-06-14 00:48:45 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-06-14 00:48:54 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-06-14 00:48:57 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rahul@bugzila.com
+2015-06-14 00:48:59 INFO  [TextBoxHelper] - [typeUsingKeyWord]  typeInTextBox : id Value : rathore
+2015-06-14 00:49:08 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : Bugzilla_restrictlogin
+2015-06-14 00:49:16 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : log_in
+2015-06-14 00:49:51 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-06-14 00:50:16 INFO  [ComboBoxHelper] - [selectByKeyWord]  Select By Text : rep_platform : Text : Other
+2015-06-14 00:50:32 INFO  [ButtonHelper] - [clickUsingKeyWord]  Clicked on Button : //div[@id='header']/ul[1]/li[11]/a

@@ -1,0 +1,60 @@
+2016-07-09 01:00:12 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:00:19 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:00:21 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:00:35 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:01:08 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:01:14 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:01:15 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:01:35 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:01:48 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:01:54 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:01:56 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:02:18 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:14:16 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:14:17 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:14:19 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:14:29 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:15:21 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:15:22 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:15:24 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:28:49 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:28:51 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:28:52 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:29:27 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:29:28 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:29:30 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:39:27 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:39:29 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:39:30 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:39:51 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2016-07-09 01:39:53 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:39:54 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:40:22 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:40:27 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:40:29 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:41:15 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:41:20 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:41:21 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:44:47 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:44:54 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:44:55 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:45:02 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:45:07 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:45:36 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:45:41 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:45:43 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:45:59 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : .//*[@id='header']/ul[1]/li[9]/a
+2016-07-09 01:46:08 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : .//*[@id='whining']/a
+2016-07-09 01:46:23 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:46:36 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[8]/a
+2016-07-09 01:46:40 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:46:49 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[9]/a
+2016-07-09 01:48:00 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-07-09 01:48:06 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-07-09 01:48:07 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:48:23 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : .//*[@id='header']/ul[1]/li[9]/a
+2016-07-09 01:48:36 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : .//*[@id='links-saved']/ul/li/a
+2016-07-09 01:48:45 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:48:56 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[8]/a
+2016-07-09 01:48:59 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://localhost:5001/
+2016-07-09 01:49:09 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //div[@id='header']/ul[1]/li[9]/a

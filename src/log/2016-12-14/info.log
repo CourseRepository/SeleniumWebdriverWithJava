@@ -1,0 +1,3 @@
+2016-12-14 23:49:32 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2016-12-14 23:49:47 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2016-12-14 23:50:39 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://jhu.test.technolutions.net/account/login

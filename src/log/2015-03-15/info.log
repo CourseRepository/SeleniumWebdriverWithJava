@@ -1,0 +1,138 @@
+2015-03-15 23:04:11 INFO  [StartWebDriver] - [getFireFoxDriver]  Using Firefox Driver 
+2015-03-15 23:04:14 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:04:15 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:04:18 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:04:18 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:04:19 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:04:21 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:04:29 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 23:05:52 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-03-15 23:06:01 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:06:04 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:06:04 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:06:04 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:06:07 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:06:11 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:06:15 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 23:08:11 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-03-15 23:08:17 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:08:19 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:08:20 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:08:20 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:08:22 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:08:27 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:08:32 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 23:11:24 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-15 23:11:26 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:11:30 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:12:56 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:13:32 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:13:33 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:13:38 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : Testng
+2015-03-15 23:14:34 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-15 23:14:36 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:14:40 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:16:05 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:16:41 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:16:42 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:16:49 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:16:55 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 23:17:28 FATAL [StartWebDriver] - [tearDown]  Exception : 
+org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: e50c6345-7bb2-4521-b5f1-9eb3e134eeff
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:28469/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:185)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at helper.StartWebDriver.tearDown(StartWebDriver.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+2015-03-15 23:28:07 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-15 23:28:09 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:28:14 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2015-03-15 23:28:23 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-03-15 23:28:25 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:28:28 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:29:54 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:30:30 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:30:31 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:30:37 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:30:43 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']
+2015-03-15 23:30:51 FATAL [StartWebDriver] - [tearDown]  Exception : 
+org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: 572dfa5f-6650-48f5-8bb3-70e50ce64ac4
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:37886/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:185)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at helper.StartWebDriver.tearDown(StartWebDriver.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+2015-03-15 23:31:43 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2015-03-15 23:31:51 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-03-15 23:31:53 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2015-03-15 23:31:53 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2015-03-15 23:31:53 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2015-03-15 23:31:56 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2015-03-15 23:32:00 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2015-03-15 23:32:04 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //input[@value='Add an attachment']

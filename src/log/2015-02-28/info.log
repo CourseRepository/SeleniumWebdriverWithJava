@@ -1,0 +1,4 @@
+2015-02-28 12:10:29 INFO  [StartWebDriver] - [getHTMLUnitDriver]  Using HTMLUnit Driver 
+2015-02-28 12:10:33 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2015-02-28 12:12:21 INFO  [StartWebDriver] - [getIEDriver]  Using IE Driver 
+2015-02-28 12:12:24 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
