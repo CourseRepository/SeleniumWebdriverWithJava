@@ -173,4 +173,8 @@ public class GenericHelper extends StartWebDriver {
 		src.click(imgPatter[2]);
 	}
 
+	public static boolean isElementPresent(By xpath) {
+		return driver.findElements(xpath).size() >= 1;
+	}
+
 }
