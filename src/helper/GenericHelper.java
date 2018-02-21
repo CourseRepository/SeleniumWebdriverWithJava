@@ -110,6 +110,12 @@ public class GenericHelper extends StartWebDriver {
 		
 	}
 	
+	public static Object executeScript(String script,Object ...element) {
+		JavascriptExecutor exe = (JavascriptExecutor)driver;
+		return (exe.executeScript(script,element));
+		
+	}
+	
 	public static void waitForElement(String locator,int...delay) {
 		
 		WebDriverWait wait = null;

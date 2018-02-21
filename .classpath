@@ -2,6 +2,47 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ExternalJars"/>
+	<classpathentry kind="lib" path="lib/code-mapper/CodeMapper_Old.jar"/>
+	<classpathentry kind="lib" path="lib/code-mapper/CodeMapper.jar"/>
+	<classpathentry kind="lib" path="lib/code-mapper/CurrencyApi.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4/commons-pool-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/csv/javacsv-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/cucumber-core-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/cucumber-html-0.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/cucumber-java-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/cucumber-testng-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber/gherkin-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/dbdriver/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/dbdriver/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/log4j/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium/selenium-server-standalone-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/sikuli/sikuli-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/sikuli/sikuli-core-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/sikuli/sikuli-java.jar"/>
+	<classpathentry kind="lib" path="lib/svnant/ganymed.jar"/>
+	<classpathentry kind="lib" path="lib/svnant/jna.jar"/>
+	<classpathentry kind="lib" path="lib/svnant/svnant.jar"/>
+	<classpathentry kind="lib" path="lib/svnant/svnClientAdapter.jar"/>
+	<classpathentry kind="lib" path="lib/svnant/svnjavahl.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/antlr-runtime-3.4.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/sequence-library-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/sqljet-1.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/svnkit-1.7.8.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/svnkit-cli-1.7.8.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/svnkit-javahl16-1.7.8.jar"/>
+	<classpathentry kind="lib" path="lib/svnkit/trilead-ssh2-1.0.0-build215.jar"/>
+	<classpathentry kind="lib" path="lib/testng/testng-6.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

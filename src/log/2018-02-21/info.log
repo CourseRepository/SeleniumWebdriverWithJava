@@ -1,0 +1,12 @@
+2018-02-21 12:20:17 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-21 12:21:36 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-21 12:22:02 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.w3schools.com/bootstrap/bootstrap_modal.asp
+2018-02-21 12:22:13 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //button[text()='Click To Open Modal']
+2018-02-21 12:26:01 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-21 12:26:04 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-21 12:26:12 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.w3schools.com/bootstrap/bootstrap_modal.asp
+2018-02-21 12:26:21 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //button[text()='Click To Open Modal']
+2018-02-21 12:26:38 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-21 12:26:41 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-21 12:26:41 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://www.w3schools.com/bootstrap/bootstrap_modal.asp
+2018-02-21 12:26:50 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : //button[text()='Click To Open Modal']
