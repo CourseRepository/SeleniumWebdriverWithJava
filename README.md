@@ -1,6 +1,6 @@
 # Selenium Webdriver with Java Language
 
-This course will help you in learning advanced techniques for testing web applications with Webdriver (Selenium 2.0).
+This course will help you in learning advanced techniques for testing web applications with Webdriver.
 
 ## Course Link (Discount Coupon)
 
