@@ -1,10 +1,10 @@
 package testcase;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.internal.WrapsDriver;
-import org.testng.Assert;
+import org.openqa.grid.internal.utils.configuration.StandaloneConfiguration;
+import org.openqa.selenium.remote.server.SeleniumServer;
 import org.testng.annotations.Test;
+
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
 
 
 /**
@@ -18,6 +18,19 @@ public class TestWebDriverBacked {
 	
 	@Test
 	public void testBackedSelenium() throws Exception {
+		
+		StandaloneConfiguration config = new StandaloneConfiguration();
+		config.browserTimeout = 60;
+		config.debug = true;
+		config.host = "127.0.0.1";
+		config.port = 4444;
+		config.jettyMaxThreads = 5;
+		config.timeout = 60;
+		
+		SeleniumServer server = new SeleniumServer(config);
+		server.start();
+		server.stop();
+		
 		/*SeleniumServer server = new SeleniumServer();
 		server.boot();
 		server.start();*/

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_202"/>
 	<classpathentry kind="lib" path="lib/code-mapper/CodeMapper_Old.jar"/>
 	<classpathentry kind="lib" path="lib/code-mapper/CodeMapper.jar"/>
 	<classpathentry kind="lib" path="lib/code-mapper/CurrencyApi.jar"/>
@@ -26,7 +26,6 @@
 	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-ooxml-schemas-3.10.1-20140818.jar"/>
 	<classpathentry kind="lib" path="lib/poi-3.10.1/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/poi-3.10.1/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="lib/selenium/selenium-server-standalone-3.8.1.jar"/>
 	<classpathentry kind="lib" path="lib/sikuli/sikuli-api-1.2.0.jar"/>
 	<classpathentry kind="lib" path="lib/sikuli/sikuli-core-1.2.2.jar"/>
 	<classpathentry kind="lib" path="lib/sikuli/sikuli-java.jar"/>
@@ -44,5 +43,8 @@
 	<classpathentry kind="lib" path="lib/svnkit/svnkit-javahl16-1.7.8.jar"/>
 	<classpathentry kind="lib" path="lib/svnkit/trilead-ssh2-1.0.0-build215.jar"/>
 	<classpathentry kind="lib" path="lib/testng/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="lib/selenium/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="lib/selenium/htmlunit-driver-2.34.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium/selenium-leg-rc-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

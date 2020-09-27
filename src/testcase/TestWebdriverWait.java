@@ -85,5 +85,25 @@ public class TestWebdriverWait extends StartWebDriver {
 		};
 		return waitFunction;
 	}
+	
+	private Function<WebDriver, Boolean> waitForTimer(final By aLocator,final String aValue){
+		Function<WebDriver, Boolean> waitFunction = new Function<WebDriver, Boolean>() {
+
+			@Override
+			public Boolean apply(WebDriver driver) {
+				if(getTheTextOfElement(aLocator, driver).equalsIgnoreCase(aValue))
+					return true;
+				else{
+					System.out.println("Value : " + getTheTextOfElement(aLocator, driver));
+					return false;
+				}
+			}
+		};
+		return waitFunction;
+	}
+	
+	private String getTheTextOfElement(final By aLocator, WebDriver driver) {
+		return driver.findElement(aLocator).getText();
+	}
 
 }

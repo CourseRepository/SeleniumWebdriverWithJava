@@ -7,13 +7,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.NoSuchElementException;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.FindFailed;
@@ -57,7 +57,7 @@ public class GenericHelper extends StartWebDriver {
 		
 		try {
 			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(src, new File(path + System.getProperty("file.separator") + fileName + ".jpg"));
+			FileHandler.copy(src, new File(path + System.getProperty("file.separator") + fileName + ".jpg"));
 			oLog.info(" ScreenShot File : " + fileName + ".jpg");
 		} catch (IOException e) {
 			e.printStackTrace();

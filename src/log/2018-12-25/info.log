@@ -1,0 +1,3 @@
+2018-12-25 23:17:46 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-12-25 23:18:09 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-12-25 23:18:11 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_suggest

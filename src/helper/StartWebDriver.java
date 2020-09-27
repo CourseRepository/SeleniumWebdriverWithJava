@@ -143,6 +143,16 @@ public abstract class StartWebDriver extends ElementRepositry {
 		}
 	}
 	
+	protected static WebElement getElement(By locator) {
+		if(driver.findElements(locator).size() == 1){
+			return driver.findElement(locator);
+		}else{
+			oLog.error(" No Such Element : " + locator);
+			throw new NoSuchElementException("No Such Element : " + locator);
+		}
+	}
+	
+	
 	@AfterTest(alwaysRun=true)
 	public void tearDown() {
 		try {

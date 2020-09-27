@@ -1,0 +1,38 @@
+2018-05-25 11:42:44 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-05-25 11:43:07 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-05-25 11:43:27 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://192.169.1.10:5001/
+2018-05-25 11:43:31 ERROR [LinkHelper] - [clickLink]  Link Text Not Found : File a Bug
+2018-05-25 11:45:56 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-05-25 11:46:03 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-05-25 11:46:05 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://192.168.1.10:5001/
+2018-05-25 11:46:07 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2018-05-25 11:46:08 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2018-05-25 11:46:08 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : rathore
+2018-05-25 11:46:08 INFO  [CheckBoxHelper] - [clickCheckBox]  Clicked on Checkbox : Bugzilla_restrictlogin
+2018-05-25 11:46:09 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2018-05-25 11:46:28 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-05-25 11:46:30 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-05-25 11:46:32 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://192.168.1.10:5001/
+2018-05-25 11:46:35 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2018-05-25 11:46:35 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2018-05-25 11:46:35 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : welcome
+2018-05-25 11:46:35 INFO  [CheckBoxHelper] - [clickCheckBox]  Clicked on Checkbox : Bugzilla_restrictlogin
+2018-05-25 11:46:37 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2018-05-25 11:46:40 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2018-05-25 11:46:40 INFO  [ComboBoxHelper] - [select]  Select By Index : bug_severity : Index Value : 1
+2018-05-25 11:46:40 INFO  [ComboBoxHelper] - [select]  Select By Value : bug_severity : Value : trivial
+2018-05-25 11:46:41 INFO  [ComboBoxHelper] - [select]  Select By Value : rep_platform : Value : Macintosh
+2018-05-25 11:46:50 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestSelect.jpg
+2018-05-25 11:50:19 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-05-25 11:50:22 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-05-25 11:50:23 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : http://192.168.1.10:5001/
+2018-05-25 11:50:26 INFO  [LinkHelper] - [clickLink]  clickLink : File a Bug
+2018-05-25 11:50:27 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_login Value : rahul@bugzila.com
+2018-05-25 11:50:27 INFO  [TextBoxHelper] - [typeInTextBox]  typeInTextBox : Bugzilla_password Value : welcome
+2018-05-25 11:50:27 INFO  [CheckBoxHelper] - [clickCheckBox]  Clicked on Checkbox : Bugzilla_restrictlogin
+2018-05-25 11:50:29 INFO  [ButtonHelper] - [clickButton]  Clicked on Button : log_in
+2018-05-25 11:50:31 INFO  [LinkHelper] - [clickLink]  clickLink : Testng
+2018-05-25 11:50:31 INFO  [ComboBoxHelper] - [select]  Select By Index : bug_severity : Index Value : 1
+2018-05-25 11:50:32 INFO  [ComboBoxHelper] - [select]  Select By Value : bug_severity : Value : trivial
+2018-05-25 11:50:32 INFO  [ComboBoxHelper] - [select]  Select By Value : rep_platform : Value : Macintosh
+2018-05-25 11:51:10 INFO  [GenericHelper] - [takeScreenShot]  ScreenShot File : testcase.TestSelect.jpg

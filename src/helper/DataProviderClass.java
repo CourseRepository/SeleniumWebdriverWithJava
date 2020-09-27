@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-import net.sourceforge.htmlunit.corejs.javascript.ObjArray;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;

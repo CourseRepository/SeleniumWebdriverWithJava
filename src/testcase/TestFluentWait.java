@@ -29,6 +29,34 @@ import com.google.common.base.Predicate;
 public class TestFluentWait extends StartWebDriver {
 	
 	@Test
+	public static void fwait() {
+		
+		WindowHelper.navigateToPage("http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_suggest");
+		//driver.switchTo().frame(driver.findElement(By.id("iframeResult")));
+		
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		
+		FluentWait<WebDriver> fw = new  FluentWait<WebDriver>(driver);
+		fw.withTimeout(5, TimeUnit.SECONDS);
+		fw.pollingEvery(1, TimeUnit.SECONDS);
+		fw.ignoring(NoSuchElementException.class);
+		
+		Function<WebDriver,WebElement>  fun= new Function<WebDriver,WebElement> (){
+			
+			public WebElement apply(WebDriver driver) {
+			System.out.println("Element searching");
+			return driver.findElement(By.id("twotabsearchtextbox"));
+			}
+		};
+		
+		fw.until(fun).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Element Found");
+		
+	}
+	
+	
+	@Test
 	public void testWait(){
 		
 	//	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

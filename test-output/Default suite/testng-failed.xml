@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.TestPromotion">
+      <class name="testcase.TestFluentWait">
         <methods>
+          <include name="fwait"/>
           <include name="setUp"/>
-          <include name="Testcase1" invocation-numbers="0 1 2 3 4"/>
+          <include name="testWait"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testcase.TestPromotion -->
+      </class> <!-- testcase.TestFluentWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

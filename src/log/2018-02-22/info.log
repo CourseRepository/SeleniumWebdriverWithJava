@@ -1,0 +1,13 @@
+2018-02-22 18:00:00 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://configurator.scania.com/index.aspx?etel_market=5134&etel_language=5509
+2018-02-22 18:07:08 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-22 18:07:13 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-22 18:07:19 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://configurator.scania.com/index.aspx?etel_market=5134&etel_language=5509
+2018-02-22 18:09:53 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-22 18:09:58 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-22 18:10:06 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://configurator.scania.com/index.aspx?etel_market=5134&etel_language=5509
+2018-02-22 18:23:18 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-22 18:23:22 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-22 18:23:28 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://configurator.scania.com/index.aspx?etel_market=5134&etel_language=5509
+2018-02-22 18:24:29 INFO  [StartWebDriver] - [getChromeDriver]  Using Chrome Driver 
+2018-02-22 18:24:33 INFO  [WindowHelper] - [windowMaximize]  windowMaximize  
+2018-02-22 18:24:40 INFO  [WindowHelper] - [navigateToPage]  navigateToPage : https://configurator.scania.com/index.aspx?etel_market=5134&etel_language=5509
